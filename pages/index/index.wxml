@@ -1,0 +1,95 @@
+<view class="header" style="background-image:url('../../images/home-bg.png')"  >
+  <view class="header_title">你与工作其实只差一次聊天</view>
+  <view class="header_ftitle" >Boss直聘</view>
+  <view class="search_box">
+    <input type="text" class="search_print" placeholder="搜索职位/公司" />
+    <view class="serach_btn" >
+      搜索
+    </view>
+  </view>
+</view>
+<view class="nav_list">
+  <view class="nav-title">
+    <image class="nav-title_pic" mode="aspectFill" src="../../images/technology.png"/>
+    技术
+  </view>
+  <view class="nav_font">
+    <text class="nav_font_box" bindtap='searchKey' data-type="java" >Java</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="PHP" >PHP</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="Web前端" >Web前端</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="数据挖掘" >数据挖掘</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="C++" >C++</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="Python" >Python</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="Andriod" >Andriod</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="ios" >ios</text>
+  </view>
+</view>
+<view class="nav_list">
+  <view class="nav-title">
+    <image class="nav-title_pic" mode="aspectFill" src="../../images/product.png"/>
+    产品
+  </view>
+  <view class="nav_font">
+    <text class="nav_font_box">产品经理</text>
+    <text class="nav_font_box">产品助理</text>
+    <text class="nav_font_box">网页产品经理</text>
+    <text class="nav_font_box">数据产品经理</text>
+  </view>
+</view>
+<view class="nav_list">
+  <view class="nav-title">
+    <image class="nav-title_pic" mode="aspectFill" src="../../images/designer.png"/>
+    设计
+  </view>
+  <view class="nav_font">
+    <text class="nav_font_box">UI设计师</text>
+    <text class="nav_font_box">平面设计师</text>
+    <text class="nav_font_box">交互设计师</text>
+    <text class="nav_font_box">设计总监</text>
+  </view>
+</view>
+<view class="nav_list">
+  <view class="nav-title">
+    <image class="nav-title_pic" mode="aspectFill" src="../../images/market.png"/>
+    市场
+  </view>
+  <view class="nav_font">
+    <text class="nav_font_box">市场营销</text>
+    <text class="nav_font_box">商务渠道</text>
+    <text class="nav_font_box">品牌公关</text>
+    <text class="nav_font_box">数据挖掘</text>
+    <text class="nav_font_box">策划经理</text>
+    <text class="nav_font_box">活动策划</text>
+    <text class="nav_font_box">SEO</text>
+    <text class="nav_font_box">SEM</text>
+  </view>
+</view>
+<view class="nav_list">
+  <view class="nav-title">
+    <image class="nav-title_pic" mode="aspectFill" src="../../images/operate.png"/>
+    运营
+  </view>
+  <view class="nav_font">
+    <text class="nav_font_box">用户运营</text>
+    <text class="nav_font_box">产品运营</text>
+    <text class="nav_font_box">新媒体运营</text>
+    <text class="nav_font_box">运营总监</text>
+    <text class="nav_font_box">商家运营</text>
+    <text class="nav_font_box">电商运营</text>
+    <text class="nav_font_box">编辑</text>
+    <text class="nav_font_box">客服经理</text>
+  </view>
+</view>
+<view class="nav_list">
+  <view class="nav-title">
+    <image class="nav-title_pic" mode="aspectFill" src="../../images/senior.png"/>
+    职能/高级管理
+  </view>
+  <view class="nav_font">
+    <text class="nav_font_box">人力资源</text>
+    <text class="nav_font_box">行政</text>
+    <text class="nav_font_box">财务</text>
+    <text class="nav_font_box">会计</text>
+    <text class="nav_font_box">CHRBP</text>
+  </view>
+</view>

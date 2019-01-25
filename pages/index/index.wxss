@@ -1,0 +1,83 @@
+.header {
+  height: 392rpx;
+  width: 750rpx;
+  background-size: 750rpx 392rpx;
+}
+
+.header_title,
+.header_ftitle {
+  padding-top: 30rpx;
+  font-size: 60rpx;
+  color: #fff;
+  text-align: center;
+}
+
+.header_ftitle {
+  padding-bottom: 30rpx;
+}
+
+.search_box {
+  width: 750rpx;
+  position: relative;
+}
+
+.search_print {
+  display: block;
+  margin: 0 auto;
+  height: 76rpx;
+  width: 65%;
+  border-radius: 120rpx;
+  background-color: #fff;
+  font-size: 14px;
+  padding-right: 114rpx;
+  padding-left: 40rpx;
+}
+
+.serach_btn {
+  position: absolute;
+  right: 78rpx;
+  top: 50%;
+  color: #5bd4c7;
+  font-size: 14px;
+  transform: translateY(-50%)
+}
+
+/* nav栏 */
+.nav_list{
+ padding-left: 30rpx;
+ padding-right: 80rpx;
+}
+
+.nav_list .nav-title{
+  padding: 40rpx 0;
+  height: 90rpx; 
+  line-height: 90rpx;
+  display: flex;
+  align-items: center;
+
+}
+.nav_list .nav-title image{
+  width: 90rpx;
+  height: 90rpx;
+  padding-right: 20rpx;
+}
+/* 文字区域 */
+.nav_font{
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #f8fafb;
+  padding-bottom: 50rpx;
+}
+.nav_font .nav_font_box{
+  background-color: #f5f8f9;
+  color: #7e8793;
+  box-sizing: border-box;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  padding: 0px 25rpx;
+  text-align: center;
+  height: 60rpx;
+  border-radius: 30rpx;
+  font-size: 12px;
+  line-height: 60rpx;
+}
