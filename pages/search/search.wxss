@@ -1,0 +1,68 @@
+/* 搜索框样式 */
+.searchInput{
+  padding-left: 40rpx;
+  position: relative;
+}
+.searchInput input {
+  border-bottom: 1px solid #ccc;
+  height: 80rpx;
+  margin-right: 40rpx;
+}
+.searchInput .searchBtn{
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.searchInput .searchBtn image {
+  width: 45rpx;
+  height: 45rpx;
+}
+/* 搜索框的列表样式 */
+.searchitem{
+  margin: 40rpx 40rpx 0 40rpx;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  padding-bottom: 40rpx;
+}
+.searchPic{
+  flex: 0.3;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+.searchPic image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+  margin-right: 30rpx;
+  margin-left: 10rpx;
+}
+.searchfont{
+  flex: 1;
+  display: flex;
+  justify-content: space-between
+}
+.search_left{
+  font-size: 14px;
+}
+.search_left .search_dec{
+  padding-top: 40rpx;
+  color: #666; 
+}
+.search_left .search_dec text {
+  padding-right: 5px;
+}
+.search_right text{
+  font-size: 18px;
+  color: orangered
+}
+
+
+/* 没有数据显示的样式 */
+.searchNone {
+  height: 300rpx;
+  width: 750rpx;
+  text-align: center;
+  line-height: 300rpx;
+}

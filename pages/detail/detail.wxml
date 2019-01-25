@@ -1,0 +1,111 @@
+<!--pages/detail/detail.wxml-->
+<view class="jobDetail" hover-class="none" hover-stop-propagation="false">
+  <view class="jobDetail_header" hover-class="none" hover-stop-propagation="false">
+    <view class="jobDetail_box" hover-class="none" hover-stop-propagation="false">
+      <view class="jobDetail_box_left" hover-class="none" hover-stop-propagation="false">
+        <view class="leftfirst" selectable="false" space="false" decode="false">
+          {{jobpage.title}}
+        </view>
+        <view class="" selectable="false" space="false" decode="false">
+          {{jobpage.city}} | {{jobpage.year}} | {{jobpage.edu}}
+        </view>
+      </view>
+      <view class="jobDetail_box_right" hover-class="none" hover-stop-propagation="false">
+        <view class="rightfirst" selectable="false" space="false" decode="false">
+          {{jobpage.salary}}
+        </view>
+        <view class="" selectable="false" space="false" decode="false">
+          发布于{{jobpage.time}}
+        </view>
+      </view>
+    </view>
+    <view class="jobDetail_bottom" hover-class="none" hover-stop-propagation="false">
+      <view class="jobDetail_bottom_item" hover-class="none" hover-stop-propagation="false">
+        {{jobpage.type.one}}
+      </view>
+      <view class="jobDetail_bottom_item" hover-class="none" hover-stop-propagation="false">
+        {{jobpage.type.two}}
+      </view>
+      <view class="jobDetail_bottom_item" hover-class="none" hover-stop-propagation="false">
+        {{jobpage.type.three}}
+      </view>
+    </view>
+  </view>
+  <view class="jobDetail_linkup" hover-class="none" hover-stop-propagation="false">
+    <view class="jobDetail_linkup_pic" hover-class="none" hover-stop-propagation="false">
+      <image class="" src="{{jobpage.contactPicUrl}}" mode="aspectFit|aspectFill|widthFix"
+        lazy-load="false" binderror="" bindload="">
+      </image>
+    </view>
+    <view class="jobDetail_linkup_title" hover-class="none" hover-stop-propagation="false">
+      <view class="jobDetail_linkup_title_name" hover-class="none" hover-stop-propagation="false">
+        {{jobpage.contactName}}
+      </view>
+      <view class="jobDetail_linkup_title_dec" hover-class="none" hover-stop-propagation="false">
+        {{jobpage.contactText}}
+      </view>
+    </view>
+    <view class="jobDetail_linkup_btn" hover-class="none" hover-stop-propagation="false">
+      <input type="button" value="立即沟通" />
+    </view>
+  </view>
+  <view class="jobDetail_main" hover-class="none" hover-stop-propagation="false">
+    <view class="jobDetail_main_item" hover-class="none" hover-stop-propagation="false">
+      <view class="jobDetail_main_title" hover-class="none" hover-stop-propagation="false">
+        职位描述
+      </view>
+      <view class="jobDetail_main_line" hover-class="none" hover-stop-propagation="false">
+      </view>
+      <view class="jobDetail_main_content" hover-class="none" hover-stop-propagation="false">
+        {{jobpage.desc}}
+      </view>
+    </view>
+    <view class="jobDetail_main_item" hover-class="none" hover-stop-propagation="false">
+      <view class="jobDetail_main_title" hover-class="none" hover-stop-propagation="false">
+        团队介绍
+      </view>
+      <view class="jobDetail_main_line" hover-class="none" hover-stop-propagation="false">
+      </view>
+      <view class="jobDetail_main_content" hover-class="none" hover-stop-propagation="false">
+        {{jobpage.teamInfo}}
+      </view>
+      <view class="jobDetail_main_box" hover-class="none" hover-stop-propagation="false">
+        <view class="jobDetail_main_box_item" hover-class="none" hover-stop-propagation="false">
+          {{jobpage.tags.one}}
+        </view>
+        <view class="jobDetail_main_box_item" hover-class="none" hover-stop-propagation="false">
+          {{jobpage.tags.two}}
+        </view>
+        <view class="jobDetail_main_box_item" hover-class="none" hover-stop-propagation="false">
+          {{jobpage.tags.three}}
+        </view>
+      </view>
+    </view>
+    <view class="jobDetail_main_map" hover-class="none" hover-stop-propagation="false">
+      <view class="jobDetail_main_map_title" hover-class="none" hover-stop-propagation="false">
+        工作地址
+      </view>
+      <view class="jobDetail_main_map_title_line" hover-class="none" hover-stop-propagation="false">
+      </view>
+      <map id="Mymap" show-location></map>
+    </view>
+  </view>
+  <view class="jobDetail_footer" hover-class="none" hover-stop-propagation="false">
+    <view class="jobDetail_footer_pic" hover-class="none" hover-stop-propagation="false">
+      <image src="{{jobpage.picUrl}}" mode="aspectFit|aspectFill|widthFix"
+        lazy-load="false" binderror="" bindload="">
+      </image>
+    </view>
+    <view class="jobDetail_footer_right" hover-class="none" hover-stop-propagation="false">
+      <view class="jobDetail_br_title" hover-class="none" hover-stop-propagation="false">
+        {{jobpage.companyName}}
+      </view>
+      <view class="jobDetail_br_font" hover-class="none" hover-stop-propagation="false">
+        {{jobpage.company}}
+      </view>
+      <view class="jobDetail_br_detail" hover-class="none" hover-stop-propagation="false">
+        {{jobpage.companyType}} | {{jobpage.companyListed}} | {{jobpage.companyPerson}}
+      </view>
+    </view>
+  </view>
+</view>

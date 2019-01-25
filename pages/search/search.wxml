@@ -1,0 +1,31 @@
+<view class="searchPage"  hover-class="none" hover-stop-propagation="false">
+  <view class="searchInput" hover-class="none" hover-stop-propagation="false">
+    <input type="text" />
+    <navigator class="searchBtn" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      <image class="" src="../../images/search.png" mode="aspectFill" lazy-load="false" binderror="" bindload=""></image>
+    </navigator>
+  </view>
+  <navigate class="searchitem"hover-class="none"hover-stop-propagation="false" bindtap="itemPageTo" data-query="{{item}}"  wx:for="{{joblist}}" wx:key="{{item.index}}">
+    <view class="searchPic" hover-class="none" hover-stop-propagation="false">
+      <image class="" src="{{item.picUrl}}" mode="aspectFill"
+        lazy-load="false" binderror="" bindload="" />
+    </view>
+    <view class="searchfont" hover-class="none" hover-stop-propagation="false">
+      <view class="search_left" hover-class="none" hover-stop-propagation="false">
+        <view class="search_title" hover-class="none" hover-stop-propagation="false">{{item.title}}</view>
+        <view class="search_company" hover-class="none" hover-stop-propagation="false">{{item.city}}</view>
+        <view class="search_dec" hover-class="none" hover-stop-propagation="false">
+          <text class="" selectable="false" space="false" decode="false">{{item.city}}</text>
+          <text class="" selectable="false" space="false" decode="false">{{item.year}}</text>
+          <text class="" selectable="false" space="false" decode="false">{{item.edu}}</text>
+        </view>
+      </view>
+      <view class="search_right" hover-class="none" hover-stop-propagation="false">
+        <text class="" selectable="false" space="false" decode="false">{{item.salary}}</text>
+      </view>
+    </view>
+  </navigate>
+</view>
+<view class="searchNone" wx:if="{{joblist.length==0}}" hover-class="none" hover-stop-propagation="false">
+    程序猿偷懒拉-------没有数据bindtap
+</view>

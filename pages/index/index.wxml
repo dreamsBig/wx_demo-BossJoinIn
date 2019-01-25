@@ -1,32 +1,36 @@
-<view class="header" style="background-image:url('../../images/home-bg.png')"  >
-  <view class="header_title">你与工作其实只差一次聊天</view>
-  <view class="header_ftitle" >Boss直聘</view>
-  <view class="search_box">
-    <input type="text" class="search_print" placeholder="搜索职位/公司" />
-    <view class="serach_btn" >
-      搜索
+<view class="header">
+  <image class="" src="../../images/home-bg.png" mode="aspectFill" lazy-load="false" binderror="" bindload="">
+  </image>
+  <view class="header_box" hover-class="none" hover-stop-propagation="false">
+    <view class="header_title">你与工作其实只差一次聊天</view>
+    <view class="header_ftitle">Boss直聘</view>
+    <view class="search_box">
+      <input type="text" bindinput="searchInput" class="search_print" placeholder="搜索职位/公司" />
+      <view class="serach_btn" bindtap="searchBtn">
+        搜索
+      </view>
     </view>
   </view>
 </view>
 <view class="nav_list">
   <view class="nav-title">
-    <image class="nav-title_pic" mode="aspectFill" src="../../images/technology.png"/>
+    <image class="nav-title_pic" mode="aspectFill" src="../../images/technology.png" />
     技术
   </view>
   <view class="nav_font">
-    <text class="nav_font_box" bindtap='searchKey' data-type="java" >Java</text>
-    <text class="nav_font_box" bindtap='searchKey' data-type="PHP" >PHP</text>
-    <text class="nav_font_box" bindtap='searchKey' data-type="Web前端" >Web前端</text>
-    <text class="nav_font_box" bindtap='searchKey' data-type="数据挖掘" >数据挖掘</text>
-    <text class="nav_font_box" bindtap='searchKey' data-type="C++" >C++</text>
-    <text class="nav_font_box" bindtap='searchKey' data-type="Python" >Python</text>
-    <text class="nav_font_box" bindtap='searchKey' data-type="Andriod" >Andriod</text>
-    <text class="nav_font_box" bindtap='searchKey' data-type="ios" >ios</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="Java高级工程师">Java高级工程师</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="PHP">PHP</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="Web前端">Web前端</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="数据挖掘">数据挖掘</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="C++">C++</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="Python">Python</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="Andriod">Andriod</text>
+    <text class="nav_font_box" bindtap='searchKey' data-type="ios">ios</text>
   </view>
 </view>
 <view class="nav_list">
   <view class="nav-title">
-    <image class="nav-title_pic" mode="aspectFill" src="../../images/product.png"/>
+    <image class="nav-title_pic" mode="aspectFill" src="../../images/product.png" />
     产品
   </view>
   <view class="nav_font">
@@ -38,7 +42,7 @@
 </view>
 <view class="nav_list">
   <view class="nav-title">
-    <image class="nav-title_pic" mode="aspectFill" src="../../images/designer.png"/>
+    <image class="nav-title_pic" mode="aspectFill" src="../../images/designer.png" />
     设计
   </view>
   <view class="nav_font">
@@ -50,7 +54,7 @@
 </view>
 <view class="nav_list">
   <view class="nav-title">
-    <image class="nav-title_pic" mode="aspectFill" src="../../images/market.png"/>
+    <image class="nav-title_pic" mode="aspectFill" src="../../images/market.png" />
     市场
   </view>
   <view class="nav_font">
@@ -66,7 +70,7 @@
 </view>
 <view class="nav_list">
   <view class="nav-title">
-    <image class="nav-title_pic" mode="aspectFill" src="../../images/operate.png"/>
+    <image class="nav-title_pic" mode="aspectFill" src="../../images/operate.png" />
     运营
   </view>
   <view class="nav_font">
@@ -82,7 +86,7 @@
 </view>
 <view class="nav_list">
   <view class="nav-title">
-    <image class="nav-title_pic" mode="aspectFill" src="../../images/senior.png"/>
+    <image class="nav-title_pic" mode="aspectFill" src="../../images/senior.png" />
     职能/高级管理
   </view>
   <view class="nav_font">

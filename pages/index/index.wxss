@@ -1,9 +1,18 @@
 .header {
+  position: relative;
+}
+.header image {
+  width: 750rpx;
+  height: 392rpx;
+}
+.header_box {
   height: 392rpx;
   width: 750rpx;
-  background-size: 750rpx 392rpx;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
 }
-
 .header_title,
 .header_ftitle {
   padding-top: 30rpx;
